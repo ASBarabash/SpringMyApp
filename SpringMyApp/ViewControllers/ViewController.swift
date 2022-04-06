@@ -29,10 +29,10 @@ class ViewController: UIViewController {
     
     //MARK: IB Actions
     @IBAction func runSpringAnimation(_ sender: SpringButton) {
-        getAnimation()
         getDiscription()
-        runButton.setTitle(animation.preset.rawValue, for: .normal)
+        getAnimation()
         animation = Animation.getAnimation()
+        runButton.setTitle(animation.preset.rawValue, for: .normal)
     }
     
     //MARK: Private Methods
