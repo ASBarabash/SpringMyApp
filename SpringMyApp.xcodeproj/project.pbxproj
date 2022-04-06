@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4157FB6427FCC3A8005444CB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157FB6327FCC3A8005444CB /* Model.swift */; };
-		4157FB6627FCD4E8005444CB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157FB6527FCD4E8005444CB /* DataManager.swift */; };
 		41F7381D27FC930300EFECAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7381C27FC930300EFECAB /* AppDelegate.swift */; };
 		41F7381F27FC930300EFECAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7381E27FC930300EFECAB /* SceneDelegate.swift */; };
 		41F7382127FC930300EFECAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F7382027FC930300EFECAB /* ViewController.swift */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		4157FB6327FCC3A8005444CB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		4157FB6527FCD4E8005444CB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		41F7381927FC930300EFECAB /* SpringMyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringMyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F7381C27FC930300EFECAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41F7381E27FC930300EFECAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +44,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4157FB6827FDC0BB005444CB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				41F7382027FC930300EFECAB /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4157FB6927FDC3F4005444CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4157FB6327FCC3A8005444CB /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4157FB6A27FDC428005444CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				41F7382227FC930300EFECAB /* Main.storyboard */,
+				41F7382727FC930400EFECAB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4157FB6B27FDC437005444CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41F7382527FC930400EFECAB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4157FB6C27FDC494005444CB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41F7381C27FC930300EFECAB /* AppDelegate.swift */,
+				41F7381E27FC930300EFECAB /* SceneDelegate.swift */,
+				41F7382A27FC930400EFECAB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		41F7381027FC930300EFECAB = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +108,11 @@
 		41F7381B27FC930300EFECAB /* SpringMyApp */ = {
 			isa = PBXGroup;
 			children = (
-				41F7381C27FC930300EFECAB /* AppDelegate.swift */,
-				41F7381E27FC930300EFECAB /* SceneDelegate.swift */,
-				41F7382027FC930300EFECAB /* ViewController.swift */,
-				41F7382227FC930300EFECAB /* Main.storyboard */,
-				41F7382527FC930400EFECAB /* Assets.xcassets */,
-				41F7382727FC930400EFECAB /* LaunchScreen.storyboard */,
-				41F7382A27FC930400EFECAB /* Info.plist */,
-				4157FB6327FCC3A8005444CB /* Model.swift */,
-				4157FB6527FCD4E8005444CB /* DataManager.swift */,
+				4157FB6827FDC0BB005444CB /* ViewControllers */,
+				4157FB6A27FDC428005444CB /* Storyboards */,
+				4157FB6927FDC3F4005444CB /* Models */,
+				4157FB6B27FDC437005444CB /* Resources */,
+				4157FB6C27FDC494005444CB /* App */,
 			);
 			path = SpringMyApp;
 			sourceTree = "<group>";
@@ -213,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F7382127FC930300EFECAB /* ViewController.swift in Sources */,
-				4157FB6627FCD4E8005444CB /* DataManager.swift in Sources */,
 				41F7381D27FC930300EFECAB /* AppDelegate.swift in Sources */,
 				41F7381F27FC930300EFECAB /* SceneDelegate.swift in Sources */,
 				4157FB6427FCC3A8005444CB /* Model.swift in Sources */,
@@ -366,7 +402,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMB6GH46SU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringMyApp/Info.plist;
+				INFOPLIST_FILE = SpringMyApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -395,7 +431,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CMB6GH46SU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpringMyApp/Info.plist;
+				INFOPLIST_FILE = SpringMyApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
